@@ -40,7 +40,7 @@ class userController extends Controller
         // $user = UserModel::where('username', 'manager9')->firstOrFail();
         // $user = UserModel::where('level_id', 2)->count();
 
-        // $user = UserModel::firstOrCreate (
+        $user = UserModel::firstOrCreate (
         //     // [
         //     //     'username' => 'manager22',
         //     //     'nama' => 'Manager',
@@ -65,11 +65,43 @@ class userController extends Controller
         //         'password' => Hash::make('12345'),
         //         'level_id' => 2
         //     ],
-        // );
-        // $user->save();
 
-        
-        return view('user', ['data' => $user]);
+                [
+                'username' => 'manager11',
+                'nama' => 'Manager11',
+                'password' => Hash::make('12345'),
+                'level_id' => 2
+            ],
+        );
+
+        $user->username = 'manager12';
+
+        $user->save();
+
+        $user->wasChanged();
+        $user->wasChanged('username');
+        $user->wasChanged(['uername', 'level_id']);
+        $user->wasChanged('nama');
+        $user->wasChanged(['nama', 'username']);
+
+        // $user->isDirty();
+        // $user->isDirty('username');
+        // $user->isDirty('nama');
+        // $user->isDirty(['nama', 'username']);
+
+        // $user->isClean();
+        // $user->isClean('username');
+        // $user->isClean('nama');
+        // $user->isClean(['nama', 'username']);
+
+
+        // $user->isDirty();
+        // $user->isClean();
+        // dd($user->isDirty());
+
+
+
+        // return view('user', ['data' => $user]);
 
 
 

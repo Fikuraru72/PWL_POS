@@ -86,12 +86,16 @@
 
 ## 2.5 Attribute Changes
 1. Ubah file controller dengan nama UserController.php dan ubah script seperti gambar di bawah ini  
+![alt text](../screenshoot/36.png)   
 2. Simpan kode program Langkah 1. Kemudian jalankan pada browser dan amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/37.png)   
 3. Ubah file controller dengan nama UserController.php dan ubah script seperti gambar di bawah ini  
+![alt text](../screenshoot/38.png)   
 4. Simpan kode program Langkah 3. Kemudian jalankan pada browser dan amati apa yang terjadi dan beri penjelasan dalam laporan  
 
 ## 2.6 CRUD
 1. Buka file view pada user.blade.php dan buat scritpnya menjadi seperti di bawah ini  
+
 2. Buka file controller pada UserController.php dan buat scriptnya untuk read menjadi seperti di bawah ini  
 3. Simpan kode program Langkah 1 dan 2. Kemudian jalankan pada browser dan amati apa yang terjadi dan beri penjelasan dalam laporan  
 4. Langkah berikutnya membuat create atau tambah data user dengan cara bikin file baru pada view dengan nama user_tambah.blade.php dan buat scriptnya menjadi seperti di
