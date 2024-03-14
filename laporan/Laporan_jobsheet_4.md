@@ -61,16 +61,28 @@
 
 ## 2.4 Retreiving or Creating Models
 1. Ubah file controller dengan nama UserController.php dan ubah script 
+![alt text](../screenshoot/24.png)   
 2. Ubah kembali file view dengan nama user.blade.php dan ubah script  
-3. Simpan kode program Langkah 1 dan 2. Kemudian jalankan pada browser dan amati apa yang terjadi  
+![alt text](../screenshoot/25.png)   
+3. Simpan kode program Langkah 1 dan 2. Kemudian jalankan pada browser dan amati apa yang terjadi 
+![alt text](../screenshoot/26.png)   
 4. Ubah file controller dengan nama UserController.php dan ubah script  
+![alt text](../screenshoot/27.png)   
 5. Simpan kode program Langkah 4. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user   
+![alt text](../screenshoot/28.png)   
+![alt text](../screenshoot/29.png)   
 6. Ubah file controller dengan nama UserController.php dan ubah script  
+![alt text](../screenshoot/30.png)   
 7. Simpan kode program Langkah 6. Kemudian jalankan pada browser dan amati  
+![alt text](../screenshoot/31.png)   
 8. Ubah file controller dengan nama UserController.php dan ubah script  
-9. Simpan kode program Langkah 8. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user   
+![alt text](../screenshoot/32.png)   
+9. Simpan kode program Langkah 8. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user  
+![alt text](../screenshoot/33.png)   
 10. Ubah file controller dengan nama UserController.php dan ubah script  
+![alt text](../screenshoot/34.png)   
 11. Simpan kode program Langkah 9. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user  
+![alt text](../screenshoot/35.png)   
 
 ## 2.5 Attribute Changes
 
