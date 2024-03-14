@@ -40,4 +40,30 @@
 ![Alt text](../screenshoot/15.png)   
 
 ## 2.2 Not Found Exceptions
+1. Ubah file controller dengan nama UserController.php dan ubah script   
+2. Simpan kode program Langkah 1. Kemudian jalankan pada browser dan amati apa yang terjadi  
+3. Ubah file controller dengan nama UserController.php dan ubah script  
+4. Simpan kode program Langkah 3. Kemudian jalankan pada browser dan amati apa yang terjadi  
+
+## 2.3 Retreiving Aggregrates
+1. Ubah file controller dengan nama UserController.php dan ubah script   
+2. Simpan kode program Langkah 1. Kemudian jalankan pada browser   
+3. Buat agar jumlah script pada langkah 1 bisa tampil pada halaman browser, sebagai contoh bisa lihat gambar di bawah ini dan ubah script pada file view supaya bisa muncul datanya
+
+## 2.4 Retreiving or Creating Models
+1. Ubah file controller dengan nama UserController.php dan ubah script 
+2. Ubah kembali file view dengan nama user.blade.php dan ubah script  
+3. Simpan kode program Langkah 1 dan 2. Kemudian jalankan pada browser dan amati apa yang terjadi  
+4. Ubah file controller dengan nama UserController.php dan ubah script  
+5. Simpan kode program Langkah 4. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user   
+6. Ubah file controller dengan nama UserController.php dan ubah script  
+7. Simpan kode program Langkah 6. Kemudian jalankan pada browser dan amati  
+8. Ubah file controller dengan nama UserController.php dan ubah script  
+9. Simpan kode program Langkah 8. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user   
+10. Ubah file controller dengan nama UserController.php dan ubah script  
+11. Simpan kode program Langkah 9. Kemudian jalankan pada browser dan amati apa yang terjadi dan cek juga pada phpMyAdmin pada tabel m_user  
+
+## 2.5 Attribute Changes
+
+
 
