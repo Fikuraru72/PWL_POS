@@ -52,8 +52,12 @@
 
 ## 2.3 Retreiving Aggregrates
 1. Ubah file controller dengan nama UserController.php dan ubah script   
+![alt text](../screenshoot/20.png)   
 2. Simpan kode program Langkah 1. Kemudian jalankan pada browser   
+![alt text](../screenshoot/21.png)   
 3. Buat agar jumlah script pada langkah 1 bisa tampil pada halaman browser, sebagai contoh bisa lihat gambar di bawah ini dan ubah script pada file view supaya bisa muncul datanya
+![alt text](../screenshoot/22.png)   
+![alt text](../screenshoot/23.png)   
 
 ## 2.4 Retreiving or Creating Models
 1. Ubah file controller dengan nama UserController.php dan ubah script 
