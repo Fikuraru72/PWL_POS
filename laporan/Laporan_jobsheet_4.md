@@ -41,9 +41,14 @@
 
 ## 2.2 Not Found Exceptions
 1. Ubah file controller dengan nama UserController.php dan ubah script   
+![alt text](../screenshoot/16.png)  
 2. Simpan kode program Langkah 1. Kemudian jalankan pada browser dan amati apa yang terjadi  
+![alt text](../screenshoot/17.png)  
 3. Ubah file controller dengan nama UserController.php dan ubah script  
+![alt text](../screenshoot/18.png)  
 4. Simpan kode program Langkah 3. Kemudian jalankan pada browser dan amati apa yang terjadi  
+![alt text](../screenshoot/19.png)   
+
 
 ## 2.3 Retreiving Aggregrates
 1. Ubah file controller dengan nama UserController.php dan ubah script   
