@@ -95,30 +95,48 @@
 
 ## 2.6 CRUD
 1. Buka file view pada user.blade.php dan buat scritpnya menjadi seperti di bawah ini  
-
+![alt text](../screenshoot/39.png)   
 2. Buka file controller pada UserController.php dan buat scriptnya untuk read menjadi seperti di bawah ini  
+![alt text](../screenshoot/40.png)   
 3. Simpan kode program Langkah 1 dan 2. Kemudian jalankan pada browser dan amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/41.png)   
 4. Langkah berikutnya membuat create atau tambah data user dengan cara bikin file baru pada view dengan nama user_tambah.blade.php dan buat scriptnya menjadi seperti di
 bawah ini  
+![alt text](../screenshoot/42.png)   
 5. Tambahkan script pada routes dengan nama file web.php. Tambahkan seperti gambar di bawah ini  
-6. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan
-script dalam class dan buat method baru dengan nama tambah dan diletakan di bawah method index seperti gambar di bawah ini  
+![alt text](../screenshoot/43.png)   
+6. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama tambah dan diletakan di bawah method index seperti gambar di bawah ini
+![alt text](../screenshoot/44.png)   
 7. Simpan kode program Langkah 4 s/d 6. Kemudian jalankan pada browser dan klik link “+ Tambah User” amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/45.png)   
 8. Tambahkan script pada routes dengan nama file web.php. Tambahkan seperti gambar di bawah ini  
-9. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama tambah_simpan dan diletakan di
-bawah method tambah seperti gambar di bawah ini  
-10. Simpan kode program Langkah 8 dan 9. Kemudian jalankan link localhost:8000/user/tambah atau localhost/PWL_POS/public/user/tambah pada browser dan input formnya dan simpan, kemudian amati apa yang terjadi dan beri
-penjelasan dalam laporan  
-11. Langkah berikutnya membuat update atau ubah data user dengan cara bikin file baru pada view dengan nama user_ubah.blade.php dan buat scriptnya menjadi seperti di bawah ini  
+![alt text](../screenshoot/46.png)   
+9. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama tambah_simpan dan diletakan di bawah method tambah seperti gambar di bawah ini  
+![alt text](../screenshoot/47.png)   
+10. Simpan kode program Langkah 8 dan 9. Kemudian jalankan link localhost:8000/user/tambah atau localhost/PWL_POS/public/user/tambah pada browser dan input formnya dan simpan, kemudian amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/48.png)   
+11. Langkah berikutnya membuat update atau ubah data user dengan cara bikin file baru pada view dengan nama user_ubah.blade.php dan buat scriptnya menjadi seperti di bawah ini 
+![alt text](../screenshoot/49.png)   
 12. Tambahkan script pada routes dengan nama file web.php. Tambahkan seperti gambar di bawah ini  
+![alt text](../screenshoot/50.png)   
 13. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama ubah dan diletakan di bawah method tambah_simpan seperti gambar di bawah ini  
+![alt text](../screenshoot/51.png)   
 14. Simpan kode program Langkah 11 sd 13. Kemudian jalankan pada browser dan klik link “Ubah” amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/52.png)   
 15. Tambahkan script pada routes dengan nama file web.php. Tambahkan seperti gambar di bawah ini  
+![alt text](../screenshoot/53.png)   
 16. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama ubah_simpan dan diletakan di bawah method ubah seperti gambar di bawah ini  
+![alt text](../screenshoot/54.png)   
 17. Simpan kode program Langkah 15 dan 16. Kemudian jalankan link localhost:8000/user/ubah/1 atau localhost/PWL_POS/public/user/ubah/1 pada browser dan ubah input formnya dan klik tombol ubah, kemudian amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/55.png)   
 18. Berikut untuk langkah delete . Tambahkan script pada routes dengan nama file web.php. Tambahkan seperti gambar di bawah ini  
-19. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama hapus dan diletakan di bawah method ubah_simpan seperti gambar di bawah ini
+![alt text](../screenshoot/56.png)   
+19. Tambahkan script pada controller dengan nama file UserController.php. Tambahkan script dalam class dan buat method baru dengan nama hapus dan diletakan 
+![alt text](../screenshoot/57.png)   
 20. Simpan kode program Langkah 18 dan 19. Kemudian jalankan pada browser dan klik tombol hapus, kemudian amati apa yang terjadi dan beri penjelasan dalam laporan  
+![alt text](../screenshoot/41.png)   
+![alt text](../screenshoot/58.png)   
+
 
 ## 2.7 Relationships
 1. Buka file model pada UserModel.php dan tambahkan scritpnya menjadi seperti di bawah ini
