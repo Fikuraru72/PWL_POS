@@ -140,7 +140,9 @@ bawah ini
 
 ## 2.7 Relationships
 1. Buka file model pada UserModel.php dan tambahkan scritpnya menjadi seperti di bawah ini
+![alt text](../screenshoot/59.png)   
 2. Buka file controller pada UserController.php dan ubah method script menjadi seperti di bawah ini
+![alt text](../screenshoot/60.png)   
 3. Simpan kode program Langkah 2. Kemudian jalankan link pada browser, kemudian amati apa yang terjadi dan beri penjelasan dalam laporan
 
 
