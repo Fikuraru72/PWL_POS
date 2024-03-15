@@ -144,6 +144,7 @@ bawah ini
 2. Buka file controller pada UserController.php dan ubah method script menjadi seperti di bawah ini
 ![alt text](../screenshoot/60.png)   
 3. Simpan kode program Langkah 2. Kemudian jalankan link pada browser, kemudian amati apa yang terjadi dan beri penjelasan dalam laporan
+![alt text](../screenshoot/61.png)   
 
 
 
