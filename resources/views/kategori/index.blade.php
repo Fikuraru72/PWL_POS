@@ -10,6 +10,8 @@
             <div class="card-header">Manage Kategori</div>
             <div class="card-body">
                 {{ $dataTable->table() }}
+                <br>
+                <a href="/kategori/create" class="btn btn-success"> + Add Kategori</a>
             </div>
         </div>
     </div>
