@@ -35,7 +35,7 @@ class KategoriController extends Controller
         return view('kategori.create');
     }
 
-    public function store (){
+    public function store (Request $request){
         KategoriModel::create([
             'kategori_kode' => $request->kodeKategori,
             'kategori_nama' => $request->namaKategori,
@@ -48,8 +48,9 @@ class KategoriController extends Controller
     }
 
     public function hapus($id){
-        $kategori = KategoriModel::find($id); 
-        return $kategori->delete();
+        $kategori = KategoriModel::find($id);
+        $kategori->delete();
+        return redirect('/kategori');
     }
 }
 
