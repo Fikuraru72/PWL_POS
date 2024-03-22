@@ -46,6 +46,10 @@ class KategoriController extends Controller
     public function edit(){
         return view('kategori.edit');
     }
+
+    public function hapus($id){
+        return KategotiModelDB::delete('delete m_kategori where kategori_id  = ?', [$id]);
+    }
 }
 
 

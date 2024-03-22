@@ -31,11 +31,12 @@ Route::get('/user/ubah/{id}', [\App\Http\Controllers\UserController::class, 'uba
 Route::put('/user/ubah_simpan/{id}', [\App\Http\Controllers\UserController::class, 'ubah_simpan'])->name('/user/ubah_simpan');
 Route::get('/user/hapus/{id}', [\App\Http\Controllers\UserController::class, 'hapus'])->name('/user/hapus');;
 
-Route::get('/kategori', [KategoriController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
 Route::get('/kategori/create', [KategoriController::class, 'create'])->name('/kategori/create');
 Route::post('/kategori', [KategoriController::class, 'store'])->name('/kategori');
 
 Route::get('/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
+Route::get('/kategori/hapus/{id}', [KategoriController::class, 'hapus'])->name('kategori.hapus');
 
 
 

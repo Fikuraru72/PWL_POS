@@ -22,8 +22,8 @@ class KategoriDataTable extends DataTable
     {
         return (new EloquentDataTable($query))
             ->addColumn('action', function($row){
-                return '<a href="' .route('kategori.edit', $row->kategori_id ) . '"class="btn btn-warning ">Edit</a>';
-                return '<a href="' .route('kategori.edit', $row->kategori_id ) . '"class="btn btn-warning ">Hapus</a>';
+                return '<a href="' .route('kategori.edit', $row->kategori_id ) . '"class="btn btn-warning ">Edit</a>
+                        <a href="' .route('kategori.hapus', $row->kategori_id ) . '"class="btn btn-danger ">Hapus</a>';
             })
             ->setRowId('id');
     }
