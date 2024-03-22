@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\DataTables\KategoriDataTable;
-use App\Models\Kategori;
+use App\Models\KategoriModel;
 
 class KategoriController extends Controller
 {
@@ -48,7 +48,8 @@ class KategoriController extends Controller
     }
 
     public function hapus($id){
-        return KategotiModelDB::delete('delete m_kategori where kategori_id  = ?', [$id]);
+        $kategori = KategoriModel::find($id); 
+        return $kategori->delete();
     }
 }
 

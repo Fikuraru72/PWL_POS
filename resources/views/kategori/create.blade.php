@@ -11,7 +11,7 @@
                 <h3 class="card-title">Buat Kategori Baru</h3>
             </div>
 
-            <form action="post" action="../kategori">
+            <form action="post" action="kategori.store">
                 <div class="card-body">
                     <div class="form-gruop">
                         <label for="kodeKategori">Kode Kategori</label>
