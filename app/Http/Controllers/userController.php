@@ -149,4 +149,8 @@ class userController extends Controller
         return redirect('/user');
     }
 
+    public function edit ($id){
+        
+    }
+
 }

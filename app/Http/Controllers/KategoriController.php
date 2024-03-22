@@ -42,6 +42,10 @@ class KategoriController extends Controller
         ]);
         return redirect('/kategori');
     }
+
+    public function edit(){
+        return view('kategori.edit');
+    }
 }
 
 
