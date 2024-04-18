@@ -1,18 +1,15 @@
-@extends('Layouts.app')
+@extends('layouts.template')
 
+@section('content')
 
-@section('subtitle', 'welcome')
-@section('content_header_title', 'Home')
-@section('content_header_subtitle', 'Welcome')
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Halo Apakabar!!!</h3>
+        <div class="card-tools"></div>
+    </div>
+    <div class="card-body">
+        Selamat datang semua, ini adalah halaman utama dari aplikasi ini
+    </div>
+</div>
 
-@section('content_body')
-    <p>Welcome to this beatiful admin panel.</p>
-@stop
-
-@push('css')
-
-@endpush
-
-@push('js')
-
-@endpush
+@endsection

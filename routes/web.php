@@ -4,6 +4,7 @@ use App\Http\Controllers\userController;
 use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LevelController;
+use App\Http\Controllers\WelcomeController;
 
 
 /*
@@ -17,27 +18,37 @@ use App\Http\Controllers\LevelController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/level', [LevelController::class, 'index']);
-Route::get('/kategori', [KategoriController::class, 'index']);
+// Route::get('/level', [LevelController::class, 'index']);
+// Route::get('/kategori', [KategoriController::class, 'index']);
 
-Route::get('/user', [\App\Http\Controllers\UserController::class, 'index'])->name('/user');
-Route::get('/user/tambah', [\App\Http\Controllers\UserController::class, 'tambah'])->name('/user/tambah');
-Route::post('/user/tambah_simpan', [\App\Http\Controllers\UserController::class, 'tambah_simpan'])->name('/user/tambah_simpan');
-Route::get('/user/ubah/{id}', [\App\Http\Controllers\UserController::class, 'ubah'])->name('/user/ubah');
-Route::put('/user/ubah_simpan/{id}', [\App\Http\Controllers\UserController::class, 'ubah_simpan'])->name('/user/ubah_simpan');
-Route::get('/user/hapus/{id}', [\App\Http\Controllers\UserController::class, 'hapus'])->name('/user/hapus');;
+// Route::get('/user', [\App\Http\Controllers\UserController::class, 'index'])->name('/user');
+// Route::get('/user/tambah', [\App\Http\Controllers\UserController::class, 'tambah'])->name('/user/tambah');
+// Route::post('/user/tambah_simpan', [\App\Http\Controllers\UserController::class, 'tambah_simpan'])->name('/user/tambah_simpan');
+// Route::get('/user/ubah/{id}', [\App\Http\Controllers\UserController::class, 'ubah'])->name('/user/ubah');
+// Route::put('/user/ubah_simpan/{id}', [\App\Http\Controllers\UserController::class, 'ubah_simpan'])->name('/user/ubah_simpan');
+// Route::get('/user/hapus/{id}', [\App\Http\Controllers\UserController::class, 'hapus'])->name('/user/hapus');;
 
-Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
-Route::get('/kategori/create', [KategoriController::class, 'create'])->name('/kategori/create');
-Route::post('/kategori', [KategoriController::class, 'store']);
+// Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
+// Route::get('/kategori/create', [KategoriController::class, 'create'])->name('/kategori/create');
+// Route::post('/kategori', [KategoriController::class, 'store']);
 
-Route::get('/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
-Route::get('/kategori/hapus/{id}', [KategoriController::class, 'hapus'])->name('kategori.hapus');
+// Route::get('/kategori/edit/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
+// Route::get('/kategori/hapus/{id}', [KategoriController::class, 'hapus'])->name('kategori.hapus');
 // Route::get('')
 
+Route::get('/', [WelcomeController::class, 'index']);
 
-
+Route::prefix('user')->group(function () {
+    Route::get('/', [UserController::class, 'index']);
+    Route::post('/list', [UserController::class, 'list']);
+    Route::get('/create', [UserController::class, 'create']);
+    Route::post('/', [UserController::class, 'store']);
+    Route::get('/{id}', [UserController::class, 'show']);
+    Route::get('/{id}/edit', [UserController::class, 'edit']);
+    Route::put('/{id}', [UserController::class, 'update']);
+    Route::delete('/{id}', [UserController::class, 'destroy']);
+});
