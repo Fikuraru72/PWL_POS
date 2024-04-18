@@ -84,7 +84,7 @@ $(document).ready(function() {
                 searchable: false // searchable: true, jika ingin kolom ini bisa dicari
             },{
                 data: "aksi",
-                className: "",
+                className: "text-center",
                 orderable: false, // orderable: true, jika ingin kolom ini bisa diurutkan
                 searchable: false // searchable: true, jika ingin kolom ini bisa dicari
             }
