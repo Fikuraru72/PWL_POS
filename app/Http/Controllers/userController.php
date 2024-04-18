@@ -144,9 +144,7 @@ class userController extends Controller
         // apabila di $check tidak ada datanya
         if (!$check) {
             return redirect('/user')->with('error', 'Data user tidak ditemukan');
-        }
-
-        try {
+        }try {
             UserModel::destroy($id);
 
             return redirect('/user')->with('success', 'Data user berhasil dihapus');

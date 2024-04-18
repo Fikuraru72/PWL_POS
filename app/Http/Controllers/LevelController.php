@@ -128,9 +128,7 @@ class LevelController extends Controller
         $check = Level::find($id);
         if (!$check) {
             return redirect('/level')->with('error', 'Data level tidak ditemukan');
-        }
-
-        try {
+        }try {
             Level::destroy($id);
 
             return redirect('/level')->with('success', 'Data level berhasil dihapus');

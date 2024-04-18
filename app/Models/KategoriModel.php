@@ -13,7 +13,7 @@ class KategoriModel extends Model
 
     protected $fillable = ['kategori_kode', 'kategori_nama'];
 
-    public function barang(){
-        return $this->hashMany(BarangModel::class, 'barang_id', 'barang_id');
-    }
+    // public function barang(){
+    //     return $this->hashMany(BarangModel::class, 'barang_id', 'barang_id');
+    // }
 }
