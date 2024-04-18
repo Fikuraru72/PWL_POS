@@ -78,14 +78,14 @@ class KategoriController extends Controller
         $kategori = KategoriModel::select('kategori_id', 'kategori_kode', 'kategori_nama')->get();
 
         return DataTables::of($kategori)
-        ->addIndexColumn() // menambahkan kolom index / no urut (default nama kolom: DT_RowIndex)
-        ->addColumn('aksi', function ($kategori) { // menambahkan kolom aksi
+        ->addIndexColumn()
+        ->addColumn('aksi', function ($kategori) {
             $btn = '<a href="'.url('/kategori/' . $kategori->kategori_id).'" class="btn btninfo btn-sm">Detail</a> ';
             $btn .= '<a href="'.url('/kategori/' . $kategori->kategori_id . '/edit').'"class="btn btn-warning btn-sm">Edit</a> ';
             $btn .= '<form class="d-inline-block" method="POST" action="'.url('/kategori/'.$kategori->kategori_id).'">'. csrf_field() . method_field('DELETE') .'<button type="submit" class="btn btn-danger btn-sm" onclick="return confirm(\'Apakah Anda yakit menghapus data ini?\');">Hapus</button></form>';
         return $btn;
         })
-        ->rawColumns(['aksi']) // memberitahu bahwa kolom aksi adalah html
+        ->rawColumns(['aksi'])
         ->make(true);
     }
 
@@ -108,7 +108,6 @@ class KategoriController extends Controller
     // menambahkan data baru
     public function store(Request $request){
         $request->validate([
-            //aturan
             'kategori_kode' => 'required|string|min:3|max:10|unique:m_kategori,kategori_kode',
             'kategori_nama' => 'required|string|max:100',
         ]);
