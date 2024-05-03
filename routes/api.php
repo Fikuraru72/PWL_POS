@@ -23,12 +23,21 @@ Route::middleware('auth:api')->get('/user', function (Request $request){
     return $request->user();
 });
 
-
+// Route untuk level user
 Route::get('/levels', [LevelController::class, 'index']);
 Route::post('/levels', [LevelController::class, 'store']);
 Route::get('/levels/{level}', [LevelController::class, 'show']);
 Route::put('/levels/{level}', [LevelController::class, 'update']);
 Route::delete('/levels/{level}', [LevelController::class, 'destroy']);
+
+// Route untuk User
+Route::get('users', [UserController::class, 'index']);
+Route::post('users', [UserController::class, 'store']);
+Route::get('users/{user}', [UserController::class, 'show']);
+Route::put('users/{user}', [UserController::class, 'update']);
+Route::delete('users/{user}', [UserController::class, 'destroy']);
+
+
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
