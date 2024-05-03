@@ -56,13 +56,7 @@ class UserController extends Controller
     public function update(Request $request, UserModel $user)
     {
         // Simpan perubahan pada instance UserModel
-        $user->update([
-            'level_id' => $request->filled('level_id') ? $request->level_id : $user->level_id,
-            'username' => $request->filled('username') ? $request->username : $user->username,
-            'nama' => $request->filled('nama') ? $request->nama : $user->nama,
-            'password' => $request->filled('password') ? bcrypt($request->password) : $user->password,
-            'updated_at' => now(),
-        ]);
+        $user->update($request->all());
 
         // Mengembalikan respons JSON dengan data yang diperbarui
         return response()->json([
