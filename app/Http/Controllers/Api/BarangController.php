@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Barang;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Validator;
 
 class BarangController extends Controller
 {
@@ -27,6 +28,8 @@ class BarangController extends Controller
             'barang_nama' => 'required',
             'harga_beli' => 'required|numeric',
             'harga_jual' => 'required|numeric',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif,svg|max:2048',
+
         ]);
 
         $barang = Barang::create($request->all());
