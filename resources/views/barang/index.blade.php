@@ -14,7 +14,7 @@
         @if (session('error'))
             <div class="alert alert-danger">{{ session('error') }}</div>
         @endif
-        
+
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group row">
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <table class="table table-bordered table-striped table-hover table-sm" id="table_barang">
+        <table   id="table_barang">
             <thead>
                 <tr>
                     <th>ID</th>

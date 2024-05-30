@@ -33,11 +33,18 @@ class UserModel extends Authenticatable implements JWTSubject
         'username',
         'nama',
         'password',
+        'image'
     ];
 
     public function level(): BelongsTo
     {
         return $this->belongsTo(Level::class, 'level_id', 'level_id');
+    }
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($image) => url('/stronge/posts/' .$image),
+        );
     }
 }
 
